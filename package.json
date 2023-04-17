@@ -1,9 +1,13 @@
 {
   "name": "talk-a-tive",
+  "homepage": "https://raviIm2022.github.io/Chit-Chat-App",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "private": "false",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "nodemon backend/server.js"
   },
   "author": "ravi maurya",
@@ -15,6 +19,7 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-async-handler": "^1.2.0",
+    "gh-pages": "^5.0.0",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.0.1",
     "nodemon": "^2.0.21",
